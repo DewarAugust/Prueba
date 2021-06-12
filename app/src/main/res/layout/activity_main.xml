@@ -1,0 +1,116 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Recoger"
+                android:id="@+id/txtrecoger"/>
+            <EditText
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:id="@+id/textubicacion"
+                android:clickable="true"
+                android:focusable="false"
+                />
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Entregar"
+                android:id="@+id/txtentregar"
+                android:clickable="true"
+                />
+
+            <EditText
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:id="@+id/textentregan"
+                android:focusable="false"
+                />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Fecha de Recoleccion"
+                />
+
+            <EditText
+                android:id="@+id/mostrar_fecha"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:ems="8"
+                android:inputType="date"
+                android:layout_marginStart="8dp"
+                app:layout_constraintLeft_toLeftOf="parent"
+                android:layout_marginTop="10dp"
+                android:clickable="true"
+                android:focusable="false"
+                 />
+            <EditText
+                android:id="@+id/mostrar_hora"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:ems="8"
+                android:layout_marginStart="8dp"
+                app:layout_constraintLeft_toLeftOf="parent"
+                android:layout_marginTop="10dp"
+                android:clickable="true"
+                android:focusable="false"
+                />
+            <EditText
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:text="Recoger"
+                />
+
+            <EditText
+                android:id="@+id/mostrar_fecha2"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:ems="8"
+                android:inputType="date"
+                android:layout_marginStart="8dp"
+                app:layout_constraintLeft_toLeftOf="parent"
+                android:layout_marginTop="10dp"
+                android:clickable="true"
+                android:focusable="false"
+                />
+            <EditText
+                android:id="@+id/mostrar_hora2"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:ems="8"
+                android:layout_marginStart="8dp"
+                app:layout_constraintLeft_toLeftOf="parent"
+                android:layout_marginTop="10dp"
+                android:clickable="true"
+                android:focusable="false"
+                />
+
+            <Spinner
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:id="@+id/carro"
+                />
+
+
+
+
+        </LinearLayout>
+    </ScrollView>
+
+
+</RelativeLayout>
